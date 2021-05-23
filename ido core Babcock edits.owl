@@ -12,7 +12,7 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ido.owl>
-<http://purl.obolibrary.org/obo/Babcock-2021-1-15/ido.owl>
+<http://purl.obolibrary.org/obo/Babcock-2021-5-23/ido.owl>
 Annotation(protege:defaultLanguage "en"^^xsd:string)
 Annotation(dc:contributor "Asiyah Yu Lin")
 Annotation(dc:contributor "Jie Zheng")
@@ -126,7 +126,6 @@ Declaration(Class(obo:ERO_0000006))
 Declaration(Class(obo:ERO_0000008))
 Declaration(Class(obo:ERO_0000229))
 Declaration(Class(obo:ERO_0000347))
-Declaration(Class(obo:FBdv_00005259))
 Declaration(Class(obo:GEO_000000370))
 Declaration(Class(obo:GEO_000000371))
 Declaration(Class(obo:GEO_000000372))
@@ -168,6 +167,9 @@ Declaration(Class(obo:GO_0006955))
 Declaration(Class(obo:GO_0006959))
 Declaration(Class(obo:GO_0008150))
 Declaration(Class(obo:GO_0008152))
+Declaration(Class(obo:GO_0009403))
+Declaration(Class(obo:GO_0009404))
+Declaration(Class(obo:GO_0009405))
 Declaration(Class(obo:GO_0009987))
 Declaration(Class(obo:GO_0010467))
 Declaration(Class(obo:GO_0016064))
@@ -177,6 +179,7 @@ Declaration(Class(obo:GO_0019814))
 Declaration(Class(obo:GO_0019815))
 Declaration(Class(obo:GO_0019882))
 Declaration(Class(obo:GO_0020033))
+Declaration(Class(obo:GO_0022610))
 Declaration(Class(obo:GO_0030101))
 Declaration(Class(obo:GO_0030183))
 Declaration(Class(obo:GO_0030217))
@@ -268,6 +271,7 @@ Declaration(Class(obo:IDO_0000426))
 Declaration(Class(obo:IDO_0000427))
 Declaration(Class(obo:IDO_0000430))
 Declaration(Class(obo:IDO_0000431))
+Declaration(Class(obo:IDO_0000433))
 Declaration(Class(obo:IDO_0000434))
 Declaration(Class(obo:IDO_0000435))
 Declaration(Class(obo:IDO_0000436))
@@ -454,6 +458,7 @@ Declaration(Class(obo:IDO_0001096))
 Declaration(Class(obo:IDO_0001109))
 Declaration(Class(obo:IDO_0001110))
 Declaration(Class(obo:IDO_0001111))
+Declaration(Class(obo:IDO_0001112))
 Declaration(Class(obo:IDO_0001124))
 Declaration(Class(obo:IDO_0001126))
 Declaration(Class(obo:IDO_0001127))
@@ -609,7 +614,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/ido.owl/IDO_0001072>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ido.owl/IDO_0001107>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ido.owl/IDO_0001130>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ido.owl/IDO_0001157>))
-Declaration(Class(<http://www.informatics.jax.org/vocab/gene_ontology/GO:0009405>))
 Declaration(Class(<http://www.ontologyrepository.com/CommonCoreOntologies/Country>))
 Declaration(Class(<http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity>))
 Declaration(Class(<http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeInformationContentEntity>))
@@ -2659,14 +2663,6 @@ AnnotationAssertion(oboInOwl:term_editor obo:ERO_0000347 "John Beverley"^^xsd:st
 AnnotationAssertion(rdfs:label obo:ERO_0000347 "intervention"@en)
 SubClassOf(obo:ERO_0000347 obo:OBI_0000011)
 
-# Class: obo:FBdv_00005259 (generative stage)
-
-AnnotationAssertion(obo:IAO_0000115 obo:FBdv_00005259 "Temporal subdivision of a developmental process.")
-AnnotationAssertion(obo:IAO_0000117 obo:FBdv_00005259 "John Beverley")
-AnnotationAssertion(obo:IAO_0000412 obo:FBdv_00005259 "http://purl.obolibrary.org/obo/fbdv.owl")
-AnnotationAssertion(rdfs:label obo:FBdv_00005259 "generative stage"@en)
-SubClassOf(obo:FBdv_00005259 obo:BFO_0000015)
-
 # Class: obo:GEO_000000370 (geographical entity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:GEO_000000370 "Material entity that is (1) a bona fide or fiat object part of the crust, any bodies of liquid on or contained within the crust, or planetary boundary layer (if present) of a terrestrial planet (including Earth), dwarf planet, exoplanet, natural satellite, planetesimal, or small Solar System body, and that (2) overlaps the planetary surface (including having a boundary that coincides with part of the planetary surface).")
@@ -3033,6 +3029,39 @@ AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:GO_0008152 "single-organism m
 AnnotationAssertion(rdfs:label obo:GO_0008152 "metabolic process")
 SubClassOf(obo:GO_0008152 obo:GO_0008150)
 
+# Class: obo:GO_0009403 (toxin biosynthetic process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:GO_0009403 "The chemical reactions and pathways resulting in the formation of toxin, a poisonous compound (typically a protein) that is produced by cells or organisms and that can cause disease when introduced into the body or tissues of an organism.")
+AnnotationAssertion(obo:IAO_0000412 obo:GO_0009403 "http://purl.obolibrary.org/obo/go.owl")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0009403 "toxin anabolism")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0009403 "toxin biosynthesis")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0009403 "toxin formation")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0009403 "toxin synthesis")
+AnnotationAssertion(rdfs:label obo:GO_0009403 "toxin biosynthetic process")
+SubClassOf(obo:GO_0009403 obo:GO_0009404)
+SubClassOf(obo:GO_0009403 ObjectSomeValuesFrom(obo:RO_0002297 obo:IDO_0000549))
+
+# Class: obo:GO_0009404 (toxin metabolic process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:GO_0009404 "The chemical reactions and pathways involving a toxin, a poisonous compound (typically a protein) that is produced by cells or organisms and that can cause disease when introduced into the body or tissues of an organism.")
+AnnotationAssertion(obo:IAO_0000412 obo:GO_0009404 "http://purl.obolibrary.org/obo/go.owl")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0009404 "toxin metabolism")
+AnnotationAssertion(rdfs:label obo:GO_0009404 "toxin metabolic process")
+SubClassOf(obo:GO_0009404 obo:GO_0008152)
+
+# Class: obo:GO_0009405 (pathogenesis)
+
+AnnotationAssertion(obo:IAO_0000115 obo:GO_0009405 "Process that generates the ability of a pathogen to induce disorder in an organism.")
+AnnotationAssertion(obo:IAO_0000116 obo:GO_0009405 "Process that is the realization of a pathogenic disposition inhering in an pathogen or pathogen population, having at least the proper process parts: (1) pathogen transmission, (2) establishment of localization in host, (3) process of establishing an infection, and (4) appearance of disorder.")
+AnnotationAssertion(obo:IAO_0000116 obo:GO_0009405 "Process that is the realization of a pathogenic disposition inhering in an pathogen or pathogen population, which in the most common case has at least all of the following proper process parts: (1) pathogen transmission, (2) establishment of localization in host, (3) process of establishing an infection, and (4) appearance of disorder. 
+
+Pathogenesis does not involve all of (1)-(4) in every case. For instance, in the case of various bacterial pathogens, pathogenesis occurs without (1)-(3) via the secretion of toxins which subsequently cause disorder in some organism.")
+AnnotationAssertion(obo:IAO_0000412 obo:GO_0009405 "http://purl.obolibrary.org/obo/go.owl")
+AnnotationAssertion(oboInOwl:term_editor obo:GO_0009405 "John Beverley"^^xsd:string)
+AnnotationAssertion(oboInOwl:term_editor obo:GO_0009405 "Shane Babcock")
+AnnotationAssertion(rdfs:label obo:GO_0009405 "pathogenesis"@en)
+SubClassOf(obo:GO_0009405 obo:BFO_0000015)
+
 # Class: obo:GO_0009987 (cellular process)
 
 AnnotationAssertion(obo:IAO_0000115 obo:GO_0009987 "Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.")
@@ -3110,6 +3139,14 @@ AnnotationAssertion(obo:IAO_0000412 obo:GO_0020033 "http://purl.obolibrary.org/o
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:GO_0020033 "surface antigen variation")
 AnnotationAssertion(rdfs:label obo:GO_0020033 "antigenic variation")
 SubClassOf(obo:GO_0020033 obo:GO_0042783)
+
+# Class: obo:GO_0022610 (biological adhesion)
+
+AnnotationAssertion(obo:IAO_0000115 obo:GO_0022610 "The attachment of a cell, organism or acellular structure to a substrate, another cell, organism or acellular structure.")
+AnnotationAssertion(obo:IAO_0000116 obo:GO_0022610 "The textual definition has been modified in IDO to encompass acellular structures.")
+AnnotationAssertion(obo:IAO_0000412 obo:GO_0022610 "http://purl.obolibrary.org/obo/go.owl")
+AnnotationAssertion(rdfs:label obo:GO_0022610 "biological adhesion")
+SubClassOf(obo:GO_0022610 obo:GO_0008150)
 
 # Class: obo:GO_0030101 (natural killer cell activation)
 
@@ -3519,7 +3556,7 @@ SubClassOf(obo:GO_0044403 obo:GO_0008150)
 AnnotationAssertion(obo:IAO_0000115 obo:GO_0044406 "Attachment of a symbiont to its host via adhesion molecules, general stickiness etc., either directly or indirectly."^^xsd:string)
 AnnotationAssertion(obo:IAO_0000412 obo:GO_0044406 obo:go.owl)
 AnnotationAssertion(rdfs:label obo:GO_0044406 "adhesion of symbiont to host"^^xsd:string)
-SubClassOf(obo:GO_0044406 obo:GO_0008150)
+SubClassOf(obo:GO_0044406 obo:GO_0022610)
 
 # Class: obo:GO_0044409 (entry into host)
 
@@ -3797,7 +3834,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000406 "Alexander Diehl")
 AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000406 "Lindsay Cowell")
 AnnotationAssertion(rdfs:label obo:IDO_0000406 "opportunistic infectious disposition"@en)
 SubClassOf(obo:IDO_0000406 <http://purl.obolibrary.org/obo/ido.owl/IDO_0001157>)
-SubClassOf(obo:IDO_0000406 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0100026) ObjectAllValuesFrom(obo:BFO_0000054 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IDO_0000625) ObjectSomeValuesFrom(obo:BFO_0000051 obo:TRANS_0000000) ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(obo:IDO_0000626 ObjectComplementOf(ObjectSomeValuesFrom(obo:BFO_0000066 obo:IDO_0000457))))))))
+SubClassOf(obo:IDO_0000406 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0000052 obo:IDO_0000528) ObjectAllValuesFrom(obo:BFO_0000054 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IDO_0000625) ObjectSomeValuesFrom(obo:BFO_0000051 obo:TRANS_0000000) ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(obo:IDO_0000626 ObjectComplementOf(ObjectSomeValuesFrom(obo:BFO_0000066 obo:IDO_0000457))))))))
 
 # Class: obo:IDO_0000407 (primary infectious disposition)
 
@@ -4009,6 +4046,14 @@ DisjointClasses(obo:IDO_0000431 obo:IDO_0000435)
 DisjointClasses(obo:IDO_0000431 obo:IDO_0000629)
 DisjointClasses(obo:IDO_0000431 obo:IDO_0000635)
 
+# Class: obo:IDO_0000433 (adhesion disposition)
+
+AnnotationAssertion(obo:IAO_0000115 obo:IDO_0000433 "Disposition borne by a macromolecule that is the disposition to participate in an adhesion process.")
+AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000433 "Shane Babcock")
+AnnotationAssertion(rdfs:label obo:IDO_0000433 "adhesion disposition")
+SubClassOf(obo:IDO_0000433 obo:BFO_0000016)
+SubClassOf(obo:IDO_0000433 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:BFO_0000054 obo:GO_0022610) ObjectSomeValuesFrom(obo:RO_0000052 obo:CHEBI_23367)))
+
 # Class: obo:IDO_0000434 (primary infection role)
 
 AnnotationAssertion(obo:IAO_0000115 obo:IDO_0000434 "Role borne by an infectious disorder whose host has another, distinct, infectious disorder - neither arising from the other through metastasis - which emerged after this infectious disorder was established due to increased host susceptibility to infectious disorders."@en)
@@ -4045,14 +4090,14 @@ AnnotationAssertion(rdfs:label obo:IDO_0000436 "infectious disease"@en)
 EquivalentClasses(obo:IDO_0000436 ObjectIntersectionOf(obo:OGMS_0000031 ObjectSomeValuesFrom(obo:IDO_0000664 obo:IDO_0000504) ObjectSomeValuesFrom(obo:RO_0000052 ObjectIntersectionOf(obo:OBI_0100026 ObjectSomeValuesFrom(obo:BFO_0000050 ObjectIntersectionOf(obo:OGMS_0000087 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IDO_0000504))))) ObjectAllValuesFrom(obo:BFO_0000054 obo:IDO_0000495) ObjectAllValuesFrom(obo:IDO_0000664 obo:IDO_0000504) ObjectAllValuesFrom(obo:RO_0000052 ObjectIntersectionOf(obo:OBI_0100026 ObjectSomeValuesFrom(obo:BFO_0000050 ObjectIntersectionOf(obo:OGMS_0000087 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IDO_0000504)))))))
 SubClassOf(obo:IDO_0000436 obo:OGMS_0000031)
 
-# Class: obo:IDO_0000437 (adhesion disposition)
+# Class: obo:IDO_0000437 (symbiont adhesion disposition)
 
-AnnotationAssertion(obo:IAO_0000115 obo:IDO_0000437 "Disposition borne by a macromolecule that is the disposition to participate in adherence to a host."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:IDO_0000437 "Adhesion disposition borne by a macromolecule part of a symbiont that is the disposition to participate in adherence to a host."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000437 "Albert Goldfain")
 AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000437 "Alexander Diehl")
 AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000437 "Lindsay Cowell")
-AnnotationAssertion(rdfs:label obo:IDO_0000437 "adhesion disposition"@en)
-SubClassOf(obo:IDO_0000437 obo:BFO_0000016)
+AnnotationAssertion(rdfs:label obo:IDO_0000437 "symbiont adhesion disposition"@en)
+SubClassOf(obo:IDO_0000437 obo:IDO_0000433)
 SubClassOf(obo:IDO_0000437 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0000052 obo:CHEBI_23367) ObjectAllValuesFrom(obo:BFO_0000054 obo:GO_0044406)))
 DisjointClasses(obo:IDO_0000437 obo:IDO_0000438)
 DisjointClasses(obo:IDO_0000437 obo:IDO_0000444)
@@ -4160,7 +4205,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000450 "Lindsay Cowell")
 AnnotationAssertion(obo:IAO_0000118 obo:IDO_0000450 "pathogenicity"@en)
 AnnotationAssertion(rdfs:comment obo:IDO_0000450 "This textual definition refers to 'organism or acellular structure' rather than 'host' so as to not exclude cases, such as food botulism, where previously formed toxins, but not the producing pathogen itself, are present in the entity.' -Shane Babcock")
 AnnotationAssertion(rdfs:label obo:IDO_0000450 "pathogenic disposition"@en)
-EquivalentClasses(obo:IDO_0000450 ObjectIntersectionOf(obo:BFO_0000016 ObjectSomeValuesFrom(obo:BFO_0000054 obo:IDO_0000626) ObjectSomeValuesFrom(obo:RO_0000052 obo:BFO_0000040)))
+EquivalentClasses(obo:IDO_0000450 ObjectIntersectionOf(obo:BFO_0000016 ObjectUnionOf(ObjectSomeValuesFrom(obo:BFO_0000054 obo:GO_0009403) ObjectSomeValuesFrom(obo:BFO_0000054 obo:IDO_0000625)) ObjectSomeValuesFrom(obo:BFO_0000054 obo:IDO_0000626) ObjectSomeValuesFrom(obo:RO_0000052 obo:BFO_0000040)))
 DisjointClasses(obo:IDO_0000450 obo:IDO_0000451)
 DisjointClasses(obo:IDO_0000450 obo:IDO_0000455)
 DisjointClasses(obo:IDO_0000450 obo:IDO_0000458)
@@ -4273,7 +4318,7 @@ SubClassOf(obo:IDO_0000463 ObjectSomeValuesFrom(obo:RO_0000052 ObjectUnionOf(obo
 
 # Class: obo:IDO_0000464 (infectivity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:IDO_0000464 "Quality that inheres in a pathogen and is the liklihood that the infectious disposition will be realized upon exposure of a susceptible organism."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:IDO_0000464 "Quality that inheres in a pathogen and is the likelihood that the infectious disposition will be realized upon exposure of a susceptible organism."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000464 "Albert Goldfain")
 AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000464 "Alexander Diehl")
 AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000464 "Lindsay Cowell")
@@ -4291,7 +4336,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000466 "Lindsay Cowell")
 AnnotationAssertion(rdfs:comment obo:IDO_0000466 "This quality is measured by the proportion of clinically apparent cases that are severe or fatal.")
 AnnotationAssertion(rdfs:label obo:IDO_0000466 "virulence"@en)
 SubClassOf(obo:IDO_0000466 obo:BFO_0000019)
-SubClassOf(obo:IDO_0000466 ObjectSomeValuesFrom(obo:RO_0000052 obo:IDO_0000596))
+SubClassOf(obo:IDO_0000466 ObjectSomeValuesFrom(obo:RO_0000052 obo:IDO_0000528))
 
 # Class: obo:IDO_0000467 (susceptibility)
 
@@ -4634,6 +4679,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000504 "Alexander Diehl")
 AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000504 "Lindsay Cowell")
 AnnotationAssertion(rdfs:label obo:IDO_0000504 "infectious disorder"@en)
 EquivalentClasses(obo:IDO_0000504 ObjectIntersectionOf(obo:OGMS_0000045 ObjectSomeValuesFrom(obo:BFO_0000050 obo:OGMS_0000087) ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(ObjectUnionOf(obo:IDO_0000596 obo:IDO_0001054) ObjectSomeValuesFrom(obo:RO_0000056 obo:IDO_0000603)))))
+SubClassOf(obo:IDO_0000504 obo:OGMS_0000045)
 
 # Class: obo:IDO_0000506 (bacteremia)
 
@@ -4725,7 +4771,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000520 "Lindsay Cowell")
 AnnotationAssertion(rdfs:label obo:IDO_0000520 "communicability interval"@en)
 SubClassOf(obo:IDO_0000520 obo:BFO_0000038)
 SubClassOf(obo:IDO_0000520 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IDO_0001353))
-SubClassOf(obo:IDO_0000520 ObjectSomeValuesFrom(obo:BFO_0000062 obo:IDO_0001343))
 
 # Class: obo:IDO_0000522 (symbiont)
 
@@ -4980,7 +5025,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000557 "Lindsay Cowell")
 AnnotationAssertion(obo:IAO_0000118 obo:IDO_0000557 "adhesin"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:IDO_0000557 "adhesion molecule"@en)
 AnnotationAssertion(rdfs:label obo:IDO_0000557 "adhesion factor"@en)
-EquivalentClasses(obo:IDO_0000557 ObjectIntersectionOf(obo:CHEBI_33839 ObjectSomeValuesFrom(obo:RO_0000091 obo:IDO_0000437)))
+EquivalentClasses(obo:IDO_0000557 ObjectIntersectionOf(obo:CHEBI_33839 ObjectSomeValuesFrom(obo:RO_0000091 obo:IDO_0000433)))
 
 # Class: obo:IDO_0000566 (primary infection)
 
@@ -5111,7 +5156,7 @@ DisjointClasses(obo:IDO_0000585 obo:IDO_0000588)
 
 # Class: obo:IDO_0000586 (infection)
 
-AnnotationAssertion(obo:IAO_0000115 obo:IDO_0000586 "Material entity part of an extended organism that has some pathogen as part, which participates in the formation of the material entity by infecting the organism."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:IDO_0000586 "Material entity that is part of an extended organism that has some pathogen as part, which participates in the formation of the material entity by invading tissues of the organism."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000586 "Albert Goldfain")
 AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000586 "Alexander Diehl")
 AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000586 "Lindsay Cowell")
@@ -5389,7 +5434,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000630 "Alexander Diehl")
 AnnotationAssertion(obo:IAO_0000117 obo:IDO_0000630 "Lindsay Cowell")
 AnnotationAssertion(obo:IAO_0000118 obo:IDO_0000630 "nosocomial infection"@en)
 AnnotationAssertion(rdfs:label obo:IDO_0000630 "hospital-acquired infection"@en)
-SubClassOf(obo:IDO_0000630 ObjectIntersectionOf(obo:IDO_0000586 ObjectSomeValuesFrom(obo:RO_0000056 ObjectIntersectionOf(<http://www.informatics.jax.org/vocab/gene_ontology/GO:0009405> ObjectSomeValuesFrom(obo:RO_0002297 obo:IDO_0000586))) ObjectSomeValuesFrom(obo:RO_0001025 obo:OMRSE_00000063)))
+SubClassOf(obo:IDO_0000630 ObjectIntersectionOf(obo:IDO_0000586 ObjectSomeValuesFrom(obo:RO_0000056 ObjectIntersectionOf(obo:GO_0009405 ObjectSomeValuesFrom(obo:RO_0002297 obo:IDO_0000586))) ObjectSomeValuesFrom(obo:RO_0001025 obo:OMRSE_00000063)))
 DisjointClasses(obo:IDO_0000630 obo:IDO_0000631)
 
 # Class: obo:IDO_0000631 (community-acquired infection)
@@ -5726,7 +5771,7 @@ SubClassOf(obo:IDO_0001085 ObjectIntersectionOf(obo:BFO_0000148 ObjectSomeValues
 
 AnnotationAssertion(obo:IAO_0000112 obo:IDO_0001088 "prions"@en)
 AnnotationAssertion(obo:IAO_0000112 obo:IDO_0001088 "viruses"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:IDO_0001088 "Object that is an arrangement of interrelated acellular parts forming a biological unit.")
+AnnotationAssertion(obo:IAO_0000115 obo:IDO_0001088 "Object consisting of an arrangement of interrelated acellular parts forming an acellular biological unit that is able to initiate replication of the structure in a host.")
 AnnotationAssertion(oboInOwl:term_editor obo:IDO_0001088 "John Beverley"^^xsd:string)
 AnnotationAssertion(rdfs:label obo:IDO_0001088 "acellular structure"@en)
 SubClassOf(obo:IDO_0001088 obo:BFO_0000030)
@@ -5812,7 +5857,14 @@ SubClassOf(obo:IDO_0001110 obo:IDO_0001111)
 AnnotationAssertion(obo:IAO_0000115 obo:IDO_0001111 "Generative stage that is a temporal subdivision of a pathogen developmental process.")
 AnnotationAssertion(oboInOwl:term_editor obo:IDO_0001111 "John Beverley"^^xsd:string)
 AnnotationAssertion(rdfs:label obo:IDO_0001111 "pathogen generative stage"@en)
-SubClassOf(obo:IDO_0001111 obo:FBdv_00005259)
+SubClassOf(obo:IDO_0001111 obo:IDO_0001112)
+
+# Class: obo:IDO_0001112 (generative stage)
+
+AnnotationAssertion(obo:IAO_0000115 obo:IDO_0001112 "Temporal subdivision of a developmental process.")
+AnnotationAssertion(obo:IAO_0000117 obo:IDO_0001112 "John Beverley")
+AnnotationAssertion(rdfs:label obo:IDO_0001112 "generative stage"@en)
+SubClassOf(obo:IDO_0001112 obo:BFO_0000015)
 
 # Class: obo:IDO_0001124 (asymptomatic carrier role)
 
@@ -6230,7 +6282,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:IDO_0100722 "Shane Babcock")
 AnnotationAssertion(obo:IAO_0000117 obo:IDO_0100722 "Yu Lin")
 AnnotationAssertion(rdfs:label obo:IDO_0100722 "infectious disease surveillance")
 SubClassOf(obo:IDO_0100722 obo:OBI_0000011)
-SubClassOf(obo:IDO_0100722 ObjectSomeValuesFrom(obo:BFO_0000055 obo:IDO_0001379))
+SubClassOf(obo:IDO_0100722 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectSomeValuesFrom(obo:RO_0000059 obo:IDO_0001379)))
 
 # Class: obo:NCBITaxon_2 (bacteria)
 
@@ -7176,19 +7228,6 @@ AnnotationAssertion(obo:IAO_0000115 <http://purl.obolibrary.org/obo/ido.owl/IDO_
 AnnotationAssertion(oboInOwl:term_editor <http://purl.obolibrary.org/obo/ido.owl/IDO_0001157> "John Beverley"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ido.owl/IDO_0001157> "infectious disposition"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/ido.owl/IDO_0001157> ObjectIntersectionOf(obo:IDO_0000450 ObjectSomeValuesFrom(obo:BFO_0000054 obo:IDO_0000603) ObjectSomeValuesFrom(obo:BFO_0000054 obo:IDO_0000625) ObjectSomeValuesFrom(obo:BFO_0000054 obo:TRANS_0000000) ObjectSomeValuesFrom(obo:RO_0000052 obo:IDO_0000528)))
-
-# Class: <http://www.informatics.jax.org/vocab/gene_ontology/GO:0009405> (pathogenesis)
-
-AnnotationAssertion(obo:IAO_0000115 <http://www.informatics.jax.org/vocab/gene_ontology/GO:0009405> "Process that generates the ability of a pathogen to induce disorder in an organism.")
-AnnotationAssertion(obo:IAO_0000116 <http://www.informatics.jax.org/vocab/gene_ontology/GO:0009405> "Process that is the realization of a pathogenic disposition inhering in an pathogen or pathogen population, having at least the proper process parts: (1) pathogen transmission, (2) establishment of localization in host, (3) process of establishing an infection, and (4) appearance of disorder.")
-AnnotationAssertion(obo:IAO_0000116 <http://www.informatics.jax.org/vocab/gene_ontology/GO:0009405> "Process that is the realization of a pathogenic disposition inhering in an pathogen or pathogen population, which in the most common case has at least all of the following proper process parts: (1) pathogen transmission, (2) establishment of localization in host, (3) process of establishing an infection, and (4) appearance of disorder. 
-
-Pathogenesis does not involve all of (1)-(4) in every case. For instance, in the case of various bacterial pathogens, pathogenesis occurs without (1)-(3) via the secretion of toxins which subsequently cause disorder in some organism.")
-AnnotationAssertion(obo:IAO_0000412 <http://www.informatics.jax.org/vocab/gene_ontology/GO:0009405> "http://purl.obolibrary.org/obo/go.owl")
-AnnotationAssertion(oboInOwl:term_editor <http://www.informatics.jax.org/vocab/gene_ontology/GO:0009405> "John Beverley"^^xsd:string)
-AnnotationAssertion(oboInOwl:term_editor <http://www.informatics.jax.org/vocab/gene_ontology/GO:0009405> "Shane Babcock")
-AnnotationAssertion(rdfs:label <http://www.informatics.jax.org/vocab/gene_ontology/GO:0009405> "pathogenesis"@en)
-SubClassOf(<http://www.informatics.jax.org/vocab/gene_ontology/GO:0009405> obo:BFO_0000015)
 
 # Class: <http://www.ontologyrepository.com/CommonCoreOntologies/Country> (country)
 
